@@ -77,12 +77,10 @@ select_boss.append(random.sample(second_boss_name,1))
 
 # 挑戦するボスの表示
 print("_______________________________________")
-print("")
 for i in range(len(player_num)-1):
   print(player_num[i],"人枠：",select_boss[0][i])
   if(i == 1) or (i == 5) or (i == 8):
     print("_______________________________________")
-    print("")
   else:
     print("---------------------------------------")
 print(player_num[9],"人枠：",select_boss[1][0])
