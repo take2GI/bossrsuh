@@ -1,11 +1,15 @@
 <html>
     <head>
         <title>Running a Python script</title>
-        <?PHP
-        echo shell_exec("python script.py");
-        ?>
-        </head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    </head>
     <body>
-        <!-- BODY -->
+        <py-script>
+          from datetime import datetime
+          now = datetime.now()
+          print(f"今は{now:%Y年%m月%d日 %H:%M:%S}です。")
+        </py-script>
     </body>
 </html>
