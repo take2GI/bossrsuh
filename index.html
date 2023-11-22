@@ -76,17 +76,17 @@ select_boss.append(first_boss_select)
 select_boss.append(random.sample(second_boss_name,1))
 
 # 挑戦するボスの表示
-print("_______________________________________")
-print("")
+display(f"_______________________________________")
+display("")
 for i in range(len(player_num)-1):
-  print(player_num[i],"人枠：",select_boss[0][i])
+  display(f player_num[i],"人枠：",select_boss[0][i])
   if(i == 1) or (i == 5) or (i == 8):
-    print("_______________________________________")
-    print("")
+    display(f"_______________________________________")
+    display(f"")
   else:
-    print("---------------------------------------")
-print(player_num[9],"人枠：",select_boss[1][0])
-print("_______________________________________")
+    display(f"---------------------------------------")
+display(f player_num[9],"人枠：",select_boss[1][0])
+display(f"_______________________________________")
         </py-script>
     </body>
 </html>
